@@ -13,6 +13,10 @@
 		33372CDA2C8B9FC3002E5C38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33372CD92C8B9FC3002E5C38 /* Preview Assets.xcassets */; };
 		33372CDC2C8B9FC3002E5C38 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33372CDB2C8B9FC3002E5C38 /* Persistence.swift */; };
 		33372CDF2C8B9FC3002E5C38 /* BubbleVideo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33372CDD2C8B9FC3002E5C38 /* BubbleVideo.xcdatamodeld */; };
+		33645F9F2C8BA009000E1CBF /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 33645F9E2C8BA009000E1CBF /* StreamVideo */; };
+		33645FA12C8BA009000E1CBF /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 33645FA02C8BA009000E1CBF /* StreamVideoSwiftUI */; };
+		3364601C2C8F8349000E1CBF /* ParticipantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364601B2C8F8349000E1CBF /* ParticipantsView.swift */; };
+		3364601E2C8F8376000E1CBF /* FloatingParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364601D2C8F8376000E1CBF /* FloatingParticipantView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,8 @@
 		33372CD92C8B9FC3002E5C38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33372CDB2C8B9FC3002E5C38 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		33372CDE2C8B9FC3002E5C38 /* BubbleVideo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BubbleVideo.xcdatamodel; sourceTree = "<group>"; };
+		3364601B2C8F8349000E1CBF /* ParticipantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsView.swift; sourceTree = "<group>"; };
+		3364601D2C8F8376000E1CBF /* FloatingParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingParticipantView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33645FA12C8BA009000E1CBF /* StreamVideoSwiftUI in Frameworks */,
+				33645F9F2C8BA009000E1CBF /* StreamVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				33372CD22C8B9FC1002E5C38 /* BubbleVideoApp.swift */,
+				3364601B2C8F8349000E1CBF /* ParticipantsView.swift */,
+				3364601D2C8F8376000E1CBF /* FloatingParticipantView.swift */,
 				33372CD42C8B9FC1002E5C38 /* ContentView.swift */,
 				33372CD62C8B9FC3002E5C38 /* Assets.xcassets */,
 				33372CDB2C8B9FC3002E5C38 /* Persistence.swift */,
@@ -89,6 +99,10 @@
 			dependencies = (
 			);
 			name = BubbleVideo;
+			packageProductDependencies = (
+				33645F9E2C8BA009000E1CBF /* StreamVideo */,
+				33645FA02C8BA009000E1CBF /* StreamVideoSwiftUI */,
+			);
 			productName = BubbleVideo;
 			productReference = 33372CCF2C8B9FC1002E5C38 /* BubbleVideo.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +131,10 @@
 				Base,
 			);
 			mainGroup = 33372CC62C8B9FC1002E5C38;
+			packageReferences = (
+				33645F9D2C8BA009000E1CBF /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+				33645FAA2C8EC89A000E1CBF /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
+			);
 			productRefGroup = 33372CD02C8B9FC1002E5C38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				33372CDC2C8B9FC3002E5C38 /* Persistence.swift in Sources */,
+				3364601C2C8F8349000E1CBF /* ParticipantsView.swift in Sources */,
 				33372CD52C8B9FC1002E5C38 /* ContentView.swift in Sources */,
 				33372CD32C8B9FC1002E5C38 /* BubbleVideoApp.swift in Sources */,
+				3364601E2C8F8376000E1CBF /* FloatingParticipantView.swift in Sources */,
 				33372CDF2C8B9FC3002E5C38 /* BubbleVideo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +303,8 @@
 				DEVELOPMENT_TEAM = J9Q34BYMQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +334,8 @@
 				DEVELOPMENT_TEAM = J9Q34BYMQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -352,6 +376,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33645F9D2C8BA009000E1CBF /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.0;
+			};
+		};
+		33645FAA2C8EC89A000E1CBF /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33645F9E2C8BA009000E1CBF /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33645F9D2C8BA009000E1CBF /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		33645FA02C8BA009000E1CBF /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33645F9D2C8BA009000E1CBF /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		33372CDD2C8B9FC3002E5C38 /* BubbleVideo.xcdatamodeld */ = {
