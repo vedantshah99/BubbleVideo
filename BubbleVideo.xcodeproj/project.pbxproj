@@ -17,6 +17,8 @@
 		33645FA12C8BA009000E1CBF /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 33645FA02C8BA009000E1CBF /* StreamVideoSwiftUI */; };
 		3364601C2C8F8349000E1CBF /* ParticipantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364601B2C8F8349000E1CBF /* ParticipantsView.swift */; };
 		3364601E2C8F8376000E1CBF /* FloatingParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364601D2C8F8376000E1CBF /* FloatingParticipantView.swift */; };
+		336460412C8FFE80000E1CBF /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336460402C8FFE80000E1CBF /* UserCredentials.swift */; };
+		336460432C900686000E1CBF /* FiltersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336460422C900686000E1CBF /* FiltersService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		33372CDE2C8B9FC3002E5C38 /* BubbleVideo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BubbleVideo.xcdatamodel; sourceTree = "<group>"; };
 		3364601B2C8F8349000E1CBF /* ParticipantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsView.swift; sourceTree = "<group>"; };
 		3364601D2C8F8376000E1CBF /* FloatingParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingParticipantView.swift; sourceTree = "<group>"; };
+		336460402C8FFE80000E1CBF /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
+		336460422C900686000E1CBF /* FiltersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				33372CD22C8B9FC1002E5C38 /* BubbleVideoApp.swift */,
+				336460402C8FFE80000E1CBF /* UserCredentials.swift */,
 				3364601B2C8F8349000E1CBF /* ParticipantsView.swift */,
 				3364601D2C8F8376000E1CBF /* FloatingParticipantView.swift */,
 				33372CD42C8B9FC1002E5C38 /* ContentView.swift */,
+				336460422C900686000E1CBF /* FiltersService.swift */,
 				33372CD62C8B9FC3002E5C38 /* Assets.xcassets */,
 				33372CDB2C8B9FC3002E5C38 /* Persistence.swift */,
 				33372CDD2C8B9FC3002E5C38 /* BubbleVideo.xcdatamodeld */,
@@ -162,10 +168,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				33372CDC2C8B9FC3002E5C38 /* Persistence.swift in Sources */,
+				336460432C900686000E1CBF /* FiltersService.swift in Sources */,
 				3364601C2C8F8349000E1CBF /* ParticipantsView.swift in Sources */,
 				33372CD52C8B9FC1002E5C38 /* ContentView.swift in Sources */,
 				33372CD32C8B9FC1002E5C38 /* BubbleVideoApp.swift in Sources */,
 				3364601E2C8F8376000E1CBF /* FloatingParticipantView.swift in Sources */,
+				336460412C8FFE80000E1CBF /* UserCredentials.swift in Sources */,
 				33372CDF2C8B9FC3002E5C38 /* BubbleVideo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
