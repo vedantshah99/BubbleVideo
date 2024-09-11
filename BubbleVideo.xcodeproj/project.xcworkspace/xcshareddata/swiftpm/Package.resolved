@@ -1,5 +1,5 @@
 {
-  "originHash" : "12a0193236cc421fd70731a758a87dcc15c28609a81a87b4b1e10d1a62132d6b",
+  "originHash" : "a02775cfc06ca808b07b1e4752fb7686d36c0ed6f65d6c4c39409b3d95eadd57",
   "pins" : [
     {
       "identity" : "agorartcengine_ios",
@@ -26,6 +26,15 @@
       "state" : {
         "revision" : "2f7e07b4de39aeb65f3fdc83e4fdbefe5d7d5292",
         "version" : "114.5735.8"
+      }
+    },
+    {
+      "identity" : "swift-deepar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DeepARSDK/swift-deepar.git",
+      "state" : {
+        "revision" : "24d1abb68e3e28a5cf6af3406dc5f809dfa0723a",
+        "version" : "5.6.9"
       }
     },
     {

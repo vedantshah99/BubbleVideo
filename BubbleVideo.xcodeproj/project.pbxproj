@@ -19,6 +19,9 @@
 		3364601E2C8F8376000E1CBF /* FloatingParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364601D2C8F8376000E1CBF /* FloatingParticipantView.swift */; };
 		336460412C8FFE80000E1CBF /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336460402C8FFE80000E1CBF /* UserCredentials.swift */; };
 		336460432C900686000E1CBF /* FiltersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336460422C900686000E1CBF /* FiltersService.swift */; };
+		336460452C90E673000E1CBF /* Effects in Resources */ = {isa = PBXBuildFile; fileRef = 336460442C90E672000E1CBF /* Effects */; };
+		336460492C90E6E4000E1CBF /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336460482C90E6E4000E1CBF /* Effect.swift */; };
+		3364604C2C90E7B7000E1CBF /* DeepAR in Frameworks */ = {isa = PBXBuildFile; productRef = 3364604B2C90E7B7000E1CBF /* DeepAR */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,8 @@
 		3364601D2C8F8376000E1CBF /* FloatingParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingParticipantView.swift; sourceTree = "<group>"; };
 		336460402C8FFE80000E1CBF /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
 		336460422C900686000E1CBF /* FiltersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersService.swift; sourceTree = "<group>"; };
+		336460442C90E672000E1CBF /* Effects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Effects; sourceTree = "<group>"; };
+		336460482C90E6E4000E1CBF /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Effect.swift; path = "../../stream-deepar-swift/StreamDeepAR/Model/Effect.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 			files = (
 				33645FA12C8BA009000E1CBF /* StreamVideoSwiftUI in Frameworks */,
 				33645F9F2C8BA009000E1CBF /* StreamVideo in Frameworks */,
+				3364604C2C90E7B7000E1CBF /* DeepAR in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,11 +73,13 @@
 		33372CD12C8B9FC1002E5C38 /* BubbleVideo */ = {
 			isa = PBXGroup;
 			children = (
+				336460442C90E672000E1CBF /* Effects */,
 				33372CD22C8B9FC1002E5C38 /* BubbleVideoApp.swift */,
 				336460402C8FFE80000E1CBF /* UserCredentials.swift */,
 				3364601B2C8F8349000E1CBF /* ParticipantsView.swift */,
 				3364601D2C8F8376000E1CBF /* FloatingParticipantView.swift */,
 				33372CD42C8B9FC1002E5C38 /* ContentView.swift */,
+				336460482C90E6E4000E1CBF /* Effect.swift */,
 				336460422C900686000E1CBF /* FiltersService.swift */,
 				33372CD62C8B9FC3002E5C38 /* Assets.xcassets */,
 				33372CDB2C8B9FC3002E5C38 /* Persistence.swift */,
@@ -108,6 +116,7 @@
 			packageProductDependencies = (
 				33645F9E2C8BA009000E1CBF /* StreamVideo */,
 				33645FA02C8BA009000E1CBF /* StreamVideoSwiftUI */,
+				3364604B2C90E7B7000E1CBF /* DeepAR */,
 			);
 			productName = BubbleVideo;
 			productReference = 33372CCF2C8B9FC1002E5C38 /* BubbleVideo.app */;
@@ -140,6 +149,7 @@
 			packageReferences = (
 				33645F9D2C8BA009000E1CBF /* XCRemoteSwiftPackageReference "stream-video-swift" */,
 				33645FAA2C8EC89A000E1CBF /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
+				3364604A2C90E7B7000E1CBF /* XCRemoteSwiftPackageReference "swift-deepar" */,
 			);
 			productRefGroup = 33372CD02C8B9FC1002E5C38 /* Products */;
 			projectDirPath = "";
@@ -155,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336460452C90E673000E1CBF /* Effects in Resources */,
 				33372CDA2C8B9FC3002E5C38 /* Preview Assets.xcassets in Resources */,
 				33372CD72C8B9FC3002E5C38 /* Assets.xcassets in Resources */,
 			);
@@ -167,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336460492C90E6E4000E1CBF /* Effect.swift in Sources */,
 				33372CDC2C8B9FC3002E5C38 /* Persistence.swift in Sources */,
 				336460432C900686000E1CBF /* FiltersService.swift in Sources */,
 				3364601C2C8F8349000E1CBF /* ParticipantsView.swift in Sources */,
@@ -402,6 +414,14 @@
 				minimumVersion = 4.4.0;
 			};
 		};
+		3364604A2C90E7B7000E1CBF /* XCRemoteSwiftPackageReference "swift-deepar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeepARSDK/swift-deepar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -414,6 +434,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 33645F9D2C8BA009000E1CBF /* XCRemoteSwiftPackageReference "stream-video-swift" */;
 			productName = StreamVideoSwiftUI;
+		};
+		3364604B2C90E7B7000E1CBF /* DeepAR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3364604A2C90E7B7000E1CBF /* XCRemoteSwiftPackageReference "swift-deepar" */;
+			productName = DeepAR;
 		};
 /* End XCSwiftPackageProductDependency section */
 
