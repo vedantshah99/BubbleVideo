@@ -1,15 +1,6 @@
 {
-  "originHash" : "a02775cfc06ca808b07b1e4752fb7686d36c0ed6f65d6c4c39409b3d95eadd57",
+  "originHash" : "3c687f9c55cafecde9386bd93cc1ea668b3d55f8730f92f40ca6e7b2006f68fb",
   "pins" : [
-    {
-      "identity" : "agorartcengine_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git",
-      "state" : {
-        "revision" : "ff783e30c19deddf4ed66eaf78f8ad5d48dece54",
-        "version" : "4.4.0"
-      }
-    },
     {
       "identity" : "stream-video-swift",
       "kind" : "remoteSourceControl",
@@ -26,15 +17,6 @@
       "state" : {
         "revision" : "2f7e07b4de39aeb65f3fdc83e4fdbefe5d7d5292",
         "version" : "114.5735.8"
-      }
-    },
-    {
-      "identity" : "swift-deepar",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/DeepARSDK/swift-deepar.git",
-      "state" : {
-        "revision" : "24d1abb68e3e28a5cf6af3406dc5f809dfa0723a",
-        "version" : "5.6.9"
       }
     },
     {

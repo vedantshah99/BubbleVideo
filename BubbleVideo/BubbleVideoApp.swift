@@ -13,6 +13,7 @@ import StreamVideoSwiftUI
 struct VideoCallApp: App {
     
     @State var streamVideo: StreamVideoUI?
+    @StateObject var filtersService = FiltersService()
     
     private func setupStreamVideo(
         with apiKey: String,
@@ -30,7 +31,7 @@ struct VideoCallApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(filtersService: filtersService)
                 .onAppear {
                     setupStreamVideo(with: "23rd9c8c88cu", userCredentials: .demoUser)
                 }
