@@ -20,6 +20,7 @@
 		336460412C8FFE80000E1CBF /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336460402C8FFE80000E1CBF /* UserCredentials.swift */; };
 		336460432C900686000E1CBF /* FiltersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336460422C900686000E1CBF /* FiltersService.swift */; };
 		336460512C9268CD000E1CBF /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336460502C9268CD000E1CBF /* FilterButton.swift */; };
+		336460592C94C1F6000E1CBF /* StreamVideoUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 336460582C94C1F6000E1CBF /* StreamVideoUIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33645FA12C8BA009000E1CBF /* StreamVideoSwiftUI in Frameworks */,
+				336460592C94C1F6000E1CBF /* StreamVideoUIKit in Frameworks */,
 				33645F9F2C8BA009000E1CBF /* StreamVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +137,7 @@
 			packageProductDependencies = (
 				33645F9E2C8BA009000E1CBF /* StreamVideo */,
 				33645FA02C8BA009000E1CBF /* StreamVideoSwiftUI */,
+				336460582C94C1F6000E1CBF /* StreamVideoUIKit */,
 			);
 			productName = BubbleVideo;
 			productReference = 33372CCF2C8B9FC1002E5C38 /* BubbleVideo.app */;
@@ -433,6 +436,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 33645F9D2C8BA009000E1CBF /* XCRemoteSwiftPackageReference "stream-video-swift" */;
 			productName = StreamVideoSwiftUI;
+		};
+		336460582C94C1F6000E1CBF /* StreamVideoUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33645F9D2C8BA009000E1CBF /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoUIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 
