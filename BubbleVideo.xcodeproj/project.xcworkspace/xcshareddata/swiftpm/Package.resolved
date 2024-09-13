@@ -1,6 +1,15 @@
 {
-  "originHash" : "3838e1b0816a7ca2cee289e60ae5e59cba23bc2855ed21bf0b68dcb1090c42c4",
+  "originHash" : "512b4bca308c4b543cf5b2da96ad29d3fbf131cfef39b4b2705582ddac7eb439",
   "pins" : [
+    {
+      "identity" : "agorartcengine_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git",
+      "state" : {
+        "revision" : "ff783e30c19deddf4ed66eaf78f8ad5d48dece54",
+        "version" : "4.4.0"
+      }
+    },
     {
       "identity" : "stream-video-swift",
       "kind" : "remoteSourceControl",
